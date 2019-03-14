@@ -1,0 +1,171 @@
+.container-body{
+	background-color: rgba( 197, 197, 197, 0.5);
+}
+
+
+/* Header */
+header{
+    background-color: rgba( 197, 197, 197, 0.5);
+    top: 0;
+    z-index: 10;
+    margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+	height: 130px;
+}
+
+ul{
+	
+	list-style-type: none;
+	justify-content: space-between;
+}
+)
+
+/* Slider */
+.boutons {
+    max-width: 800px;
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+}
+  
+img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.monSlider {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+  
+
+
+  
+#btnPrev {
+    position: absolute;
+    top: 45%;
+    left: 130px;
+    font-size: 50px;
+    border-radius: 40px;
+}
+
+
+  
+#btnNext {
+    position: absolute;
+    top: 45%;
+    right: 130px;
+    font-size: 50px;
+    border-radius: 40px;
+}
+
+/* Map */
+
+#EmplacementCarte {
+    height: 450px;
+    width: 400px;
+    border: 0.5px solid red;
+}
+
+/* Articles */
+
+#articles{
+    background-color: rgba( 226, 23, 23, 0.7);
+    text-align: center;
+    color:white;
+}
+
+#articles h2{
+    font-weight: bold;
+    margin: 20px 0;
+    color:white;
+}
+
+#articles p{
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+#articles input{
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 30px;
+    border-color: whitesmoke;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Canvas */
+#signpad{
+    width: 100%; 
+     
+    justify-content: flex-end;    
+}
+
+#canvas{
+    width:30%;
+    display: flex;
+    background-color: white;
+    height: 100px;
+    
+}
+
+/* Footer */
+footer{
+    background-color: rgba( 197, 197, 197, 0.5);
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+#afficherCompteur,#compteurNom{
+    font-weight: bolder;
+    text-align: center;
+    color:white;
+}
+
+#station,#minute,#seconde{
+    color:;
+}
+
+#annuler{
+    display: none;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 20px 0;
+    background-color: rgba(138, 43, 226,0.65);
+    border-radius: 30px;
+    border-color: grey;
+    padding: 20px;
+    font-weight: bold;
+}
+h2{
+	text-align: center;
+	margin-top:10px !important;
+	 
+}
+/* Media Query */
+@media screen and (max-width:768px){
+
+    footer p, #station, #minute, #compteurNom, #afficherCompteur{
+        font-size: 1em;
+    }
+
+    #annuler{
+        font-size: 1em;
+        padding: 5px;
+        margin: 0;
+    }
+    
+}

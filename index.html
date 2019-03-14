@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link href="css/velov.css" rel="stylesheet">
+		<link href="http://fr.allfont.net/allfont.css?fonts=open-sans-light" rel="stylesheet" type="text/css" />
+		<!--<link rel="stylesheet" href="css/velov_responsive.css" />-->
+		<!-- Stylesheet Bootsrap 4-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+		<!-- CDN open-iconic-bootstrap-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		
+		<!-- Place this data between the <head> tags of your website -->
+		<title>Velov</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="réservation de vélo'v" />
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="réservation de vélo'v">
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Vélo'v"/>
+		<meta property="og:type" content="http://velov.portfoliotdepierre.fr"/>
+		<meta property="og:url" content="http://velov.portfoliotdepierre.fr"/>
+		<meta property="og:image" content="http://example.com/image.jpg"/>
+		<meta property="og:description" content="Réservation de vélo'v"/>
+		
+	</head>
+	
+	<body class="container-body">
+		<!-- Header -->
+		<header class="row">
+			<!-- Logo -->
+			<img class="col-4" src="img/logo.png" alt="Logo de Velo'v" />
+			<ul>
+				<li><a href="#">Accueil</a></li>
+				<li><a href="#">Abonnements</a></li>
+				<li><a href="#">Plan de la ville</a></li>
+			</ul>
+		</header>
+		<!-- Slider -->
+		<section class="row">
+			<div class="boutons col-12">
+				<div><h2>Comment réserver</h2></div>
+				<div class="btn" id="btnPrev" onclick="NextPrev.prev()" data-key=""><span class="oi oi-caret-left"></span></div>
+				<img class="monSlider" id="slider" src="img/1.jpg" alt="Slider"/>
+				<div class="btn" id="btnNext" onclick="NextPrev.next()" data-key=""><span class="oi oi-caret-right"></span></div>
+			</div>
+		</section>
+		
+		<!-- Carte -->
+		<section class="row">
+			<div class="col-12 col-md-8" id="EmplacementCarte"></div>
+			<noscript>
+			<p>Attention : </p>
+			<p>Afin de pouvoir utiliser Google Maps, JavaScript doit être activé.</p>
+			<p>Or, il semble que JavaScript est désactivé ou qu\'il ne soit pas supporté par votre navigateur.</p>
+			<p>Pour afficher Google Maps, activez JavaScript en modifiant les options de votre navigateur, puis essayez à nouveau.</p>
+			</noscript>
+			<!-- Articles -->
+			<div id="articles" class="col-12 col-md-4">
+					<h2>Infos réservation</h2>
+			</div>
+			<div id="signpad">
+				<canvas id="canvas" width="100" height="50">
+				<p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+				</canvas>
+				<button id="effacer">Effacer</button>
+				<button id="valider">Valider</button>
+			</div>
+		</section>
+		
+		<footer id="footer" class="row">
+			<div class="col-12">
+				<h2 id="compteurNom" class="col-12">message de réservation ou non </h2>
+				<h2 id="afficherCompteur" class="col-12"></h2>
+				<button id="annuler" class="col-12">Annuler</button>
+			</div>
+			<div class="col-12">
+				<p>copyrights Pierre.S</p>
+			</div>
+		</footer>
+		
+		
+		<!-- Script Bootstrap 4 -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+		
+		
+		
+		<!-- Script -->
+		<script src="js/slideimages.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwNei1jWprid1N_WKkliIS11WeY81HBpk&callback=initialisation"></script>
+		<script src= "js/ajax.js"></script>
+		<script src= "js/carte.js"></script>
+		<script src="js/canvas.js"></script>
+		<script src="js/script.js"></script>
+		
+
+		
+	
+		
+	</body>
+</html>
